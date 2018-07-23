@@ -26,7 +26,6 @@ class EndpointProvider
 
     public static function findProductDomain($regionId, $product)
     {
-        echo $regionId, $product;
         if (null == self::$endpoints) {
             self::setEndpoints(EndpointConfig::getEndpoints());
         }
